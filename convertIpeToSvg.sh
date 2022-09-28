@@ -1,8 +1,9 @@
 
 
 
-
+PNG_DIR=./png_all
 SVG_DIR=./svg_all
+mkdir -p $PNG_DIR
 mkdir -p $SVG_DIR
 for i in $(find . -name *.ipe); do
 
@@ -12,5 +13,6 @@ for i in $(find . -name *.ipe); do
 
     
     iperender -svg $i $SVG_DIR/${trunk}.svg ;
+    iperender -svg $i $PNG_DIR/${trunk}.png ;
 
 done
