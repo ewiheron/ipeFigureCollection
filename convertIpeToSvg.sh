@@ -13,6 +13,6 @@ for i in $(find . -name *.ipe); do
 
     
     iperender -svg $i $SVG_DIR/${trunk}.svg ;
-    iperender -svg $i $PNG_DIR/${trunk}.png ;
+    iperender -png $i $PNG_DIR/${trunk}.png ;
 
 done
